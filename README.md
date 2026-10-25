@@ -3,6 +3,8 @@
 **Calm** is a tiny home screen for old Android TVs stuck on Android 4.4 KitKat (API 19).
 It was built for a KTC TV338 (MStar chip, 1 GB RAM), but it should work on any 4.4+ TV box or set.
 
+![Calm home screen](docs/screenshot.png)
+
 - A large clock and date over your own wallpaper, sharp at 1080p (or a soft built-in glow)
 - A dock of favourite apps that grow and outline themselves under the remote's focus
 - An **Apps** grid with every installed app
