@@ -37,7 +37,7 @@ This writes `build/calm-launcher.apk`, signed with your debug key.
 Turn on ADB / network debugging on the TV, then:
 
 ```bash
-adb connect <tv-ip>:5555
+adb connect 192.168.0.194:5555
 adb install -r build/calm-launcher.apk
 ```
 
