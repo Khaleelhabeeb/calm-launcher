@@ -18,6 +18,8 @@
         android:hardwareAccelerated="true"
         android:allowBackup="false">
 
+        <uses-library android:name="com.mstar.android" android:required="false" />
+
         <activity
             android:name=".HomeActivity"
             android:launchMode="singleTask"

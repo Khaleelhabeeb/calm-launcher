@@ -127,6 +127,7 @@ public class HomeActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
+        TvSource.useAndroid();
         applyDroppedWallpaper();
     }
 
@@ -531,7 +532,10 @@ public class HomeActivity extends Activity {
 
     // ---- Launching ----
 
+    private static final String TV_PLAYER = "com.mstar.tv.tvplayer.ui";
+
     private void launch(AppStore.App app) {
+        if (!TV_PLAYER.equals(app.component.getPackageName())) TvSource.useAndroid();
         Intent i = new Intent(Intent.ACTION_MAIN)
                 .addCategory(Intent.CATEGORY_LAUNCHER)
                 .setComponent(app.component)
